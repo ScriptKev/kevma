@@ -1,5 +1,4 @@
 export type TCharacterNormalized = {
-  id: number
   name: string
   status: string
   species: string
@@ -53,7 +52,6 @@ export type TFetchDataCharacters = {
 // Fetch Data Episodes
 
 export type TEpisodeNormalized = {
-  id: 1
   name: string
   air_date: string
   episode: string
@@ -61,7 +59,7 @@ export type TEpisodeNormalized = {
 }
 
 export type TFetchEpisode = {
-  id: 1
+  id: number
   name: string
   air_date: string
   episode: string
@@ -78,7 +76,6 @@ export type TFetchDataEpisodes = {
 // Fetch Data Locations
 
 export type TLocationNormalized = {
-  id: number
   name: string
   type: string
   dimension: string

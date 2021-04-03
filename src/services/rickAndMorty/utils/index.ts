@@ -10,7 +10,6 @@ import {
 export const normalizeFetchDataCharacters = (data: TFetchDataCharacters) => {
   const charactersNormalized: TCharacterNormalized[] = data.results.map(character => {
     return {
-      id: character.id,
       name: character.name,
       status: character.status,
       species: character.species,
@@ -35,7 +34,6 @@ export const normalizeFetchDataCharacters = (data: TFetchDataCharacters) => {
 export const normalizeFetchDataEpisodes = (data: TFetchDataEpisodes) => {
   const episodesNormalized: TEpisodeNormalized[] = data.results.map(episode => {
     return {
-      id: episode.id,
       name: episode.name,
       air_date: episode.air_date,
       episode: episode.episode,
@@ -49,7 +47,6 @@ export const normalizeFetchDataEpisodes = (data: TFetchDataEpisodes) => {
 export const normalizeFetchDataLocations = (data: TFetchDataLocations) => {
   const locationsNormalized: TLocationNormalized[] = data.results.map(location => {
     return {
-      id: location.id,
       name: location.name,
       type: location.type,
       dimension: location.dimension,
