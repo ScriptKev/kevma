@@ -36,7 +36,8 @@ const CharacterSchema: Schema = new Schema({
   url: { type: String }
 }, {
   timestamps: true,
-  versionKey: false
+  versionKey: false,
+  _id: false
 })
 
 export default model<ICharacterSchema>('Character', CharacterSchema)
